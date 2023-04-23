@@ -37,7 +37,7 @@ body, html {
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 500;
-	letter-spacing: .5em;
+	letter-spacing: .1em;
 	text-decoration: none;
 	&:hover, &:focus {
 		color: #fff;
@@ -58,9 +58,13 @@ body, html {
 		width: $size-sm;
 		height: $size-sm;
 	}
+	img {
+		width: 100%;
+	}
 }
 
 .logo__text {
+	margin: auto;
 	@include media-breakpoint-down(sm) {
 		display: none;
 	}
@@ -173,7 +177,7 @@ body, html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: end;
 	z-index: 5;
 	@include media-breakpoint-down(sm) {
 		width: $size-sm;
@@ -203,13 +207,22 @@ body, html {
 	background-color: $accent;
 	width: $size;
 	flex: 0 0 $size;
-	background-image: url(../images/dist/share-solid.svg);
-	background-size: 12px;
-	background-repeat: no-repeat;
-	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// background-image: url(../images/dist/share-solid.svg);
+	// background-size: 12px;
+	// background-repeat: no-repeat;
+	// background-position: center;
 	@include media-breakpoint-down(sm) {
 		width: $size-sm;
 		flex: 0 0 $size-sm;
+	}
+	a {
+		letter-spacing: 0.1em;
+		font-weight: bold;
+		text-decoration: none;
+		color: #fff;
 	}
 }
 
@@ -406,7 +419,7 @@ body, html {
 
 .slider-text__content {
 	text-align: right;
-	padding-right: 22%;
+	padding-right: 17%;
 	@include media-breakpoint-down(sm) {
 		padding-left: 20px;
 	}
