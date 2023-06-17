@@ -1,5 +1,5 @@
 import { Swiper, Parallax, Mousewheel, Controller, Pagination, Scrollbar, Navigation } from 'swiper'
-Swiper.use([ Parallax, Mousewheel, Controller, Pagination, Scrollbar, Navigation ])
+Swiper.use([Parallax, Mousewheel, Controller, Pagination, Scrollbar, Navigation])
 
 import { gsap, Power2 } from 'gsap'
 
@@ -8,7 +8,6 @@ import MicroModal from 'micromodal'
 document.addEventListener('DOMContentLoaded', () => {
 
 	// Modal
-
 	MicroModal.init({
 		openTrigger: 'data-micromodal-open',
 		closeTrigger: 'data-micromodal-close',
@@ -16,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		disableScroll: true,
 		awaitOpenAnimation: true,
 		awaitCloseAnimation: true,
+		debugMode: true,
 	})
 
 	// Swiper
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		pagination: {
 			el: '.slider-pagination-count .total',
 			type: 'custom',
-			renderCustom: function(swiper, current, total) {
+			renderCustom: function (swiper, current, total) {
 				let totalRes = total >= 10 ? total : `0${total}`
 				return totalRes
 			}
@@ -61,14 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	let gear = document.querySelector('.slider-gear')
 
-	swiperText.on('slideNextTransitionStart', function() {
+	swiperText.on('slideNextTransitionStart', function () {
 		gsap.to(gear, 2.8, {
 			rotation: '+=40',
 			ease: Power2.easeOut
 		})
 	})
 
-	swiperText.on('slidePrevTransitionStart', function() {
+	swiperText.on('slidePrevTransitionStart', function () {
 		gsap.to(gear, 2.8, {
 			rotation: '-=40',
 			ease: Power2.easeOut
@@ -77,24 +77,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Slide Change
 
-	let curnum = document.querySelector('.slider-pagination-count .current'),
-			pagcur = document.querySelector('.slider-pagination-current__num')
+	let curnum = document.querySelector('.slider-pagination-count .current');
+	// 	pagcur = document.querySelector('.slider-pagination-current__num')
 
-	swiperText.on('slideChange', function() {
-		let ind    = swiperText.realIndex + 1,
-				indRes = ind >= 10 ? ind : `0${ind}`
+	swiperText.on('slideChange', function () {
+		let ind = swiperText.realIndex + 1,
+			indRes = ind >= 10 ? ind : `0${ind}`
 		gsap.to(curnum, .2, {
 			force3D: true,
 			y: -10,
 			opacity: 0,
 			ease: Power2.easeOut,
-			onComplete: function() {
+			onComplete: function () {
 				gsap.to(curnum, .1, {
 					force3D: true,
 					y: 10
 				})
 				curnum.innerHTML = indRes
-				pagcur.innerHTML = indRes
+				// pagcur.innerHTML = indRes
 			}
 		})
 		gsap.to(curnum, .2, {
@@ -150,5 +150,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	// body.addEventListener('mouseout', e => {
 	// 	cursor.classList.add('hidden')
 	// })
+
+	const urlParams = new URLSearchParams(window.location.search);
+	if (urlParams.get('thanks')) {
+		MicroModal.show('modal-2');		
+	}
+
 
 })

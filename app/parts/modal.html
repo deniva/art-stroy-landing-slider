@@ -5,11 +5,11 @@
 				<h2 class="modal__title" id="modal-1-title">Рассчитать стоимость</h2>
 				<button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
 			</header>
-			<form action="#">
+			<form action="send.php" method="POST">
 				<main class="modal__content">
-					<input class="form-input modal__input" type="text" name="VH-Name" placeholder="Ваше имя...">
-					<input class="form-input modal__input" type="text" name="VH-Phone" placeholder="Ваш телефон...">
-					<textarea class="form-input modal__input" name="Message" placeholder="Сообщение..."></textarea>
+					<input class="form-input modal__input" type="text" name="name" placeholder="Ваше имя...">
+					<input class="form-input modal__input" type="text" name="phone" placeholder="Ваш телефон...">
+					<textarea class="form-input modal__input" name="message" placeholder="Сообщение..."></textarea>
 				</main>
 				<footer class="modal__footer">
 					<button class="button"><span>Отправить</span></button>

@@ -106,7 +106,8 @@ function buildcopy() {
 		'{app/js,app/css}/*.min.*',
 		'app/images/**/*.*',
 		'!app/images/src/**/*',
-		'app/fonts/**/*'
+		'app/fonts/**/*',
+		'app/send.php'
 	], { base: 'app/' })
 	.pipe(dest('dist'))
 }
@@ -147,4 +148,5 @@ function startwatch() {
 export { scripts, styles, images, deploy }
 export let assets = series(scripts, styles, images)
 export let build = series(cleandist, images, scripts, styles, buildcopy, buildhtml)
+export let watcher = series(cleandist, images, scripts, styles, buildcopy, buildhtml, startwatch)
 export default series(scripts, styles, images, parallel(browsersync, startwatch))
