@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арт-Строй</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="image/logo.png" />
+                    </a>
+                </div>
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a class="nav__menu-link" href="#services">Услуги</a>
+                        </li>
+                        <li>
+                            <a class="nav__menu-link" href="#portfolio">Работы</a>
+                        </li>
+                        <li>
+                            <a class="nav__menu-link" href="#services">Цены</a>
+                        </li>
+                        <li>
+                            <a class="nav__menu-link" href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__phone" href="tel:+79111234567">+7 911 123-45-67</a>
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <img src="image/vk.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="image/youtube.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <a name="hero"></a>
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="title hero__title">
+                        Ремонт квартир "под ключ"<br />в Санкт-Петербурге
+                    </h1>
+
+                    <ul class="hero__text">
+                        <li>Ремонт квартир и нежилых помещений.</li>
+                        <li>Строительство домов.</li>
+                        <li>Недорого. Качественно. Экологично.</li>
+                    </ul>
+
+                    <div class="hero__box">
+                        <a class="btn btn-primary" href="#contact-form">Рассчитать стоимость</a>
+                        <a class="btn btn-secondary" href="#services">Услуги</a>
+                    </div>
+
+                    <div class="hero__arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <a name="services"></a>
+            <div class="container">
+                <h1 class="title">Наши услуги по ремонту</h1>
+                <p class="desc">
+                    Мы выполняем три основных типа ремонтных работ.<br>
+                    Все материалы, строительство и уборка входят в стоимость.<br>
+                    Выберите подходящий.
+                </p>
+                <div class="services__inner">
+                    <div class="service">
+                        <img src="image/service-01.jpg" />
+                        <div class="service__title">Евроремонт студии или однокомнатной квартиры "под ключ"</div>
+                        <div class="service__price">9900</div>
+                        <div class="service__desc">
+                            Сметчик выезжает на замеры, расчитывает работу и материалы.
+                            В этот же день мы обговариваем сроки выполнения работ.
+                        </div>
+                        <a class="btn btn-primary service__btn" href="#contact-form">Рассчитать стоимость</a>
+                    </div>
+
+                    <div class="service">
+                        <img src="image/service-02.jpg" />
+                        <div class="service__title">Ремонт 2-х или 3-х комнатной квартиры "под ключ"</div>
+                        <div class="service__price">7900</div>
+                        <div class="service__desc">
+                            Сюда входит бесплатный дизайн проект, работа мастеров.
+                            Расчет всех работ мы произведем в день замеров.
+                        </div>
+                        <a class="btn btn-primary service__btn" href="#contact-form">Рассчитать стоимость</a>
+                    </div>
+
+                    <div class="service">
+                        <img src="image/service-03.jpg" />
+                        <div class="service__title">Ремонт офиса площадью более 50 м2 "под ключ"</div>
+                        <div class="service__price">5900</div>
+                        <div class="service__desc">
+                            В услугу входят бесплатные консультации с нашими дизайнерами, замеры помещения, расчет и
+                            полный перечень ремонтных работ.
+                        </div>
+                        <a class="btn btn-primary service__btn" href="#contact-form">Рассчитать стоимость</a>
+                    </div>
+
+                    <div class="service">
+                        <img src="image/service-04.jpg" />
+                        <div class="service__title">Ремонт офиса площадью до 50 м2 "под ключ"</div>
+                        <div class="service__price">7900</div>
+                        <div class="service__desc">
+                            В услугу входят бесплатные консультации с нашими дизайнерами, замеры помещения, расчет и
+                            полный перечень ремонтных работ.
+                        </div>
+                        <a class="btn btn-primary service__btn" href="#contact-form">Рассчитать стоимость</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <a name="portfolio"></a>
+            <div class="container">
+                <h1 class="title">Примеры выполненных ремонтных работ</h1>
+                <div class="slider2 swiper">
+                    <div class="slider__inner swiper-wrapper">
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0001.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0002.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0003.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0004.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0005.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0006.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0007.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0008.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0009.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0010.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0011.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0012.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0013.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0014.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0015.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0016.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0017.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0018.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0019.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="slider swiper">
+                    <div class="slider__inner swiper-wrapper">
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0001.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0002.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0003.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0004.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0005.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0006.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0007.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0008.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0009.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0010.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0011.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0012.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0013.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0014.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0015.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0016.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0017.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0018.jpg" alt="">
+                        </div>
+
+                        <div class="slider__item swiper-slide">
+                            <img src="./image/slide/IMG_0019.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <a name="reviews"></a>
+            <div class="container">
+
+                <h1 class="title">Отзывы наших клиентов</h1>
+                <div class="reviews__inner">
+                    <div class="review">
+                        <div class="review__top">
+                            <img src="image/person-01.png" />
+                            <div class="review__author">Марина Белоусова</div>
+                        </div>
+                        <div class="review__text">
+                            С удовольствием хочу оставить отзыв о работе бригады под руководством Садыка.
+                            Условия поставила сложные, двухкомнатную квартиру в черновой отделки нужно было сделать за
+                            полтора месяца.
+                            Работы были выполнены в срок в хорошем качестве.
+                            Закупка материалов тоже легла на строителей.
+                            Моя задача была написать какой материал и передать деньги.
+                            Садык, большое ему спасибо, ни разу не ничего не перепутал, вопросы финансов и отчетов по
+                            ним тоже были безупречны.
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review__top">
+                            <img src="image/person-02.jpeg" />
+                            <div class="review__author">Ольга</div>
+                        </div>
+                        <div class="review__text">
+                            История знакомства с Садыком берёт начало с сентября 2017 года. В тот год Садык и его
+                            бригада выполнили в кратчайшие сроки ремонт студии с черновой отделкой по проекту. Выполнили
+                            качественно, несмотря на сложность проекта. Когда возникла необходимость в ремонте следующей
+                            квартиры, вопроса о выборе бригады и речи не было. Однокомнатную квартиру также по проекту,
+                            с учётом ремонта и утепления лоджии ребята сделали за месяц с небольшим! Не менее значимым
+                            для меня стали приемлемые цены, идеальное соотношение цена-качество! По моей рекомендации
+                            бригада Садыка сделала ремонт моему другу.
+                            Выражаю благодарность Садыку! Желаю процветания, приятных заказчиков, всего самого
+                            наилучшего!
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review__top">
+                            <img src="image/person-03.png" />
+                            <div class="review__author">Марина</div>
+                        </div>
+                        <div class="review__text">
+                            Благодарим команду строителей за выполненный ремонт! Делали ремонт в квартире с черновой
+                            отделкой от застройщика. Всё было проведено чётко, качественно, по заранее оговоренной цене.
+                            На квартиру 41 метр уложились в срок 1,5 месяца, что очень порадовало. В ходе ремонта давали
+                            ценные советы как лучше сделать, недопониманий не возникало. Что важно, квартиру сдали
+                            чистой, без строительного мусора, мелкие недочёты были быстро и без вопросов устранены.
+                            Работой остались довольны, при необходимости будем обращаться ещё и рекомендовать знакомым!
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="advantages">
+            <a name="advantages"></a>
+            <div class="container">
+
+                <h1 class="title">Почему мы вам понравимся?</h1>
+
+                <div class="advantages__inner">
+                    <div class="advantage">
+                        <div class="advantage__number">1</div>
+                        <div class="advantage__content">
+                            <div class="advantage__title">Цена известна заранее</div>
+                            <div class="advantage__text">
+                                Она фиксирована. Мы составляем план и смету в день приезда замерщика.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="advantage__number">2</div>
+                        <div class="advantage__content">
+                            <div class="advantage__title">Дизайн-проект</div>
+                            <div class="advantage__text">
+                                Может быть полностью ваш или доработан после консультацией нашего дизайнера.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="advantage__number">3</div>
+                        <div class="advantage__content">
+                            <div class="advantage__title">Гарантия на ремонт</div>
+                            <div class="advantage__text">
+                                На все ремонтные работы мы даем гарантию 1 год.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="advantage__number">4</div>
+                        <div class="advantage__content">
+                            <div class="advantage__title">Качественные материалы</div>
+                            <div class="advantage__text">
+                                Закупка и доставка на нас.
+                                Мы работаем с такими известными поставщиками как "Петрович" и "LEROY MERLEN".
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="advantage__number">5</div>
+                        <div class="advantage__content">
+                            <div class="advantage__title">Специалисты своего дела</div>
+                            <div class="advantage__text">
+                                Мы за разделение труда.
+                                Над каждым проектом работают специалисты узкого профиля. </div>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="advantage__number">6</div>
+                        <div class="advantage__content">
+                            <div class="advantage__title">Поэтапная оплата</div>
+                            <div class="advantage__text">
+                                Поэтапная оплата ремонта.
+                                Прием работ заказчиком и оплата поделены на несколько частей. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <a name="contact-form"></a>
+            <div class="container">
+
+                <h1 class="title">Расчет стоимости ремонта бесплатно</h1>
+                <p class="desc">
+                    С вами свяжется наш замерщик и приедет в удобное время.<br />
+                    Мы составим расчет в течение 24 часов и свяжемся с вами.
+                </p>
+                <div class="form">
+                    <input class="form__input" type="text" placeholder="Имя" />
+                    <input class="form__input" type="text" placeholder="Телефон" />
+                    <input class="form__input" type="text" placeholder="E-Mail" />
+                    <button class="btn btn-primary form__btn">Отправить заявку</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="stages">
+            <a name="stages"></a>
+            <div class="container">
+
+                <h1 class="title">Из каких этапов состоит ремонт?</h1>
+
+                <div class="stages__inner">
+                    <div class="stage">
+                        <div class="stage__top">
+                            <div class="stage__title">Заявка</div>
+                            <div class="stage__direction"></div>
+                        </div>
+                        <div class="stage__text">
+                            Вы оставляете заявку на расчет стоимости ремонта и встречаетесь с замерщиком
+                        </div>
+                    </div>
+
+                    <div class="stage">
+                        <div class="stage__top">
+                            <div class="stage__title">Расчет стоимости</div>
+                            <div class="stage__direction"></div>
+                        </div>
+                        <div class="stage__text">
+                            В этот же день мы производим расчет и высылаем вам договор на подпись
+                        </div>
+                    </div>
+
+                    <div class="stage">
+                        <div class="stage__top">
+                            <div class="stage__title">Строительство</div>
+                            <div class="stage__direction"></div>
+                        </div>
+                        <div class="stage__text">
+                            На следующий день мы завозим материалы и начинаем работы
+                        </div>
+                    </div>
+
+                    <div class="stage">
+                        <div class="stage__top">
+                            <div class=""></div>
+                            <div class="stage__title">Прием работы</div>
+                        </div>
+                        <div class="stage__text">
+                            Вы принимаете, утверждаете и оплачиваете каждый этап работ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="faq">
+            <a name="faq"></a>
+            <div class="container">
+
+                <h1 class="title">Самые важные вопросы и ответы на них</h1>
+
+                <div class="faq__list">
+                    <div class="faq__item faq__item--open">
+                        <div class="faq__item-question">Сколько стоит вызов замерщика?</div>
+                        <div class="faq__item-answer">Эта бесплатная услуга</div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__item-question">У вашей компании есть лицензия и реквизиты?</div>
+                        <div class="faq__item-answer">Да, подробнее об этом вы можете узнать в разделе «Лицензия»</div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__item-question">Может ли заказчик сам предоставить материалы?</div>
+                        <div class="faq__item-answer">Конечно.
+                            Об этом нужно будет сказать замерщику или нашему менеджеру по телефону до начала составления
+                            договора</div>
+                    </div>
+
+                    <div class="faq__item">
+                        <div class="faq__item-question">Сколько времени длится ремонт?</div>
+                        <div class="faq__item-answer">Это зависит от типа работ и размера площади.
+                            Косметический ремонт средней двухкомнатной квартиры мы производим за три недели</div>
+                    </div>
+                </div>
+
+                <p class="desc">
+                    Если у вас остались, вопросы, пожалуйста, напишите нам на <a class="faq__email-address"
+                        href="email:">4008020@mail.ru</a> или позвоните по <a class="faq__phone-number"
+                        href="tel:">телефону</a>
+                </p>
+            </div>
+        </section>
+ -->
+
+        <section class="calculator">
+            <a name="calculator"></a>
+            <div class="container">
+
+                <h1 class="title">Рассчитайте стоимость ремонта</h1>
+                <p class="desc">
+                    Мы свяжемся с вами,<br />
+                    сделаем замеры, расчеты работ<br />
+                    и отправим вам документы на подпись<br />в течение 2-3 дней.
+                </p>
+                <a class="btn btn-primary calculator__btn" href="#contact-form">Отправить заявку</a>
+            </div>
+        </section>
+    </main>
+    <footer class="contact">
+        <a name="contact"></a>
+        <div class="container">
+
+            <div class="contact__inner">
+                <a class="title" href="tel:12345">+7 911 123-45-67</a>
+                <a class="title" href="email:">79111234567@mail.ru</a>
+                <p class="desc">Адрес нашего офиса: Санкт-Петербург, ...</p>
+
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <img src="image/vk.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="image/youtube.svg">
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="contact__map">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae62ff93632a97c59e558fead699cbc1cf958615f4620d4a1d51eda9e24bab2f4&amp;width=1280&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script>
+                </div>
+
+                <div class="contact__copyright">&copy; Арт-Строй, 2022 - 2023</div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+</body>
+
+</html>
